@@ -1,0 +1,42 @@
+#wall {
+  position: relative;
+  height: 30vw;
+  width: 30vw;
+  margin: auto;
+  background: url(Screenshot_2022-01-23_134759-removebg-preview.png) no-repeat;
+  background-size: 100%;
+}
+
+#hour,
+#minute,
+#second {
+  position: absolute;
+  border-radius: 10px;
+}
+
+#hour {
+  background: rgb(131, 129, 129);
+  height: 24%;
+  width: 5px;
+  top: 33%;
+  left: 50%;
+  transform-origin: bottom;
+}
+
+#minute {
+  background: rgb(255, 255, 255);
+  height: 27%;
+  width: 3px;
+  top: 30%;
+  left: 50%;
+  transform-origin: bottom;
+}
+
+#second {
+  background: rgb(167, 15, 15);
+  height: 32%;
+  top: 24%;
+  left: 50%;
+  width: 1px;
+  transform-origin: bottom;
+}
