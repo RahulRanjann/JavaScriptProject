@@ -1,9 +1,9 @@
-
 body {
   display: flex;
   justify-content: center;
   height: 98vh;
   align-items: center;
+  background-color: rebeccapurple;
 }
 #table {
   height: 5%;
@@ -12,7 +12,8 @@ body {
 .container {
   margin: auto;
   padding: 5px;
-  border: 2px solid blue;
+  border: 10px solid #7d7d7d;
+  border-radius: 35px;
 }
 .clickBtn {
   height: 70px;
@@ -20,10 +21,18 @@ body {
   border-radius: 10%;
 }
 #screen {
-  height: 50px;
-  width: 280px;
+     height: 50px;
+    width: 281px;
+    border-radius: 30px;
+    border: 6px solid rgb(0, 0, 0);s
+
 }
 #equalTo {
-
- 
+  background-color: green;
+}
+#clear{
+  background-color: red;
+}
+#delet{
+  background-color: yellow;
 }
