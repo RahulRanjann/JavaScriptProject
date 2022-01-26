@@ -3,6 +3,7 @@ const minHand = document.getElementById("minute");
 const secHand = document.getElementById("second");
 
 setInterval(() => {
+  debugger
   let date = new Date();
   let hour = date.getHours();
   let minute = date.getMinutes();
@@ -12,7 +13,7 @@ setInterval(() => {
 
   let secPosition = (second * 360) / 60;
   let minPosition = (minute * 360) / 60;
-  let hourPosition = (hour * 360) / 12;
+  let hourPosition = (hour * 360) / 12 + minPosition / 12;
 
   hourHand.style.transform = "rotate(" + hourPosition + "deg)";
   minHand.style.transform = "rotate(" + minPosition + "deg)";

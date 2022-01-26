@@ -1,0 +1,28 @@
+body {
+  display: flex;
+  justify-content: center;
+  height: 98vh;
+  align-items: center;
+}
+#table {
+  height: 5%;
+  width: 5%;
+}
+.container {
+  margin: auto;
+  padding: 5px;
+  border: 2px solid blue;
+}
+.clickBtn {
+  height: 70px;
+  width: 70px;
+  border-radius: 10%;
+}
+#screen {
+  height: 50px;
+  width: 280px;
+}
+#equalTo {
+
+ 
+}
