@@ -7,11 +7,11 @@ function kit() {
     layer_1.style.fill = "#ffff00";
     document.body.style.background = "black";
     remote = false;
-    day.innerHTML = "<p>Good night night</p>";
+    day.innerHTML = "<p>Good night🌃</p>";
   } else {
     layer_1.style.fill = "none";
     document.body.style.background = "none";
     remote = true;
-    day.innerHTML = "<p>Good morning</p>";
+    day.innerHTML = "<p>Good morning🌄</p>";
   }
 }
