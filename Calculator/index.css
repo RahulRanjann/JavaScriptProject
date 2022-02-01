@@ -21,18 +21,17 @@ body {
   border-radius: 10%;
 }
 #screen {
-     height: 50px;
-    width: 281px;
-    border-radius: 30px;
-    border: 6px solid rgb(0, 0, 0);s
-
+  height: 50px;
+  width: 281px;
+  border-radius: 30px;
+  border: 6px solid rgb(0, 0, 0);
 }
 #equalTo {
   background-color: green;
 }
-#clear{
+#clear {
   background-color: red;
 }
-#delet{
+#delet {
   background-color: yellow;
 }

@@ -1,5 +1,5 @@
 const screen = document.getElementById("screen");
-let storeNum = [""];
+let storeNum = [];
 function valueofBtn(e) {
   screen.value += e.value;
   storeNum.push(e.value);
@@ -7,12 +7,13 @@ function valueofBtn(e) {
 }
 function calculate() {
   screen.value = eval(screen.value);
-  storeNum = [""];
+  storeNum = [];
 }
 function Clear() {
-  screen.value = " ";
+  screen.value = "";
+  storeNum = [];
 }
 function delet() {
-    storeNum.pop();
-    screen.value = storeNum.join('');
+  storeNum.pop();
+  screen.value = storeNum.join("");
 }
