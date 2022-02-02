@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+a {
+  text-decoration: none;
+}
+hr{
+  width:100%;
+}
+#container {
+  display: flex;
+  height: 100vh;
+  flex-wrap: wrap; /*It set Wraping to the flex item so that when display get smaller then item make it's own space and change oriantation*/
+}
+#text {
+  width: 50vw;
+  background: rgb(255, 255, 255);
+  margin: auto;
+}
+
+#signInBox {
+  margin: auto;
+  width: 370px;
+  height: 400px;
+  background: rgb(255, 255, 255);
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 2px 10px #0000007e; /* X offset, Y Offset , Blur, Distance,Color */
+  padding: 20px;
+}
+#inputForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 10px;
+}
+.inputClass {
+  outline: none;
+  height: 40px;
+  width: 100%;
+  margin: 5px;
+  border-radius: 6px;
+  box-shadow: 0px 1px 1px #36353591;
+  border: 1px solid rgba(99, 96, 96, 0.904);
+  border-color: rgba(129, 129, 129, 0.904);
+  font-weight: bolder;
+
+}
+
+#para {
+  margin: auto;
+}
+.btnBox {
+  width: 100%;
+  height: 40px;
+  margin: 5px;
+  border-radius: 6px;
+  box-shadow: 0px 1px 1px #36353591;
+  border: 1px solid rgba(99, 96, 96, 0.904);
+  border-color: rgba(129, 129, 129, 0.904);
+  font-weight: bolder;
+  background-color: #1877f2;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 20px;
+}
+#spanText {
+  font-size: 150%;
+}
+#forgotPassword {
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  margin-top: 5%;
+  font-size: larger;
+}
+
+#create {
+  background-color: #42b72a;
+  height: 40px;
+  margin: 0%;
+  width: 60%;
+  margin: 5px;
+  border-radius: 6px;
+  box-shadow: 0px 1px 1px #36353591;
+  border: 1px solid rgba(99, 96, 96, 0.904);
+  border-color: rgba(129, 129, 129, 0.904);
+  font-weight: bolder;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
