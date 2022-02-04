@@ -6,8 +6,8 @@ body {
 a {
   text-decoration: none;
 }
-hr{
-  width:100%;
+hr {
+  width: 100%;
 }
 #container {
   display: flex;
@@ -21,7 +21,6 @@ hr{
 }
 
 #signInBox {
-  margin: auto;
   width: 370px;
   height: 400px;
   background: rgb(255, 255, 255);
@@ -31,6 +30,11 @@ hr{
   align-items: center;
   box-shadow: 0px 2px 10px #0000007e; /* X offset, Y Offset , Blur, Distance,Color */
   padding: 20px;
+}
+
+.boxB {
+  margin: auto;
+  
 }
 #inputForm {
   display: flex;
@@ -45,12 +49,12 @@ hr{
   height: 40px;
   width: 100%;
   margin: 5px;
+  padding: 1px 15px;
   border-radius: 6px;
   box-shadow: 0px 1px 1px #36353591;
   border: 1px solid rgba(99, 96, 96, 0.904);
   border-color: rgba(129, 129, 129, 0.904);
   font-weight: bolder;
-
 }
 
 #para {
@@ -99,4 +103,10 @@ hr{
   justify-content: center;
   align-items: center;
   color: white;
+}
+.lastDiv1 {
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  align-items: center;
+  text-align: center;
 }
