@@ -1,0 +1,10 @@
+.Btn {
+  height: 3pc;
+  width: 10pc;
+  background-color: #ffffff;
+  padding: 8px;
+  margin: 5px;
+  font-size: x-large;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  box-shadow: 2px 3px 10px #0000007e;
+}
