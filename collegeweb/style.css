@@ -1,3 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Mukta:wght@300;400;500;600;700;800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 body {
   background-image: url(image/hans-isaacson-iEKg9h5_hd4-unsplash.jpg);
   background-repeat: no-repeat;
@@ -5,12 +11,18 @@ body {
   background-size: cover;
   background-position: center center;
   background-color: #464646;
+  font-family: 'Mukta', sans-serif;
 }
 h1,
-h2 {
+h3 {
   color: white;
-  
-  text-align: center;
+  padding: 0px;
+  align-items: center;
+}
+h2{
+  color: white;
+  margin: auto;
+  align-items: center;
 }
 .nav ul {
   list-style: none;
@@ -24,7 +36,18 @@ h2 {
 }
 .pages {
   display: none;
+  padding: 50px 30px;
 }
 .pages.active {
   display: block;
+}
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+.imgInfo img {
+  width: 25em;
+}
+.homeInfo{
+  text-align: end;
 }
