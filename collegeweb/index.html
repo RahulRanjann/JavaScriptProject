@@ -9,50 +9,27 @@
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <div class="nav">
-      <ul>
-        <li
-          onclick="clickFun(this)"
-          data-active-page="home"
-          style="color: #00d612"
-        >
-          Home
-        </li>
-        <li
-          onclick="clickFun(this)"
-          data-active-page="project"
-          style="color: #00d612"
-        >
-          Project
-        </li>
-        <li
-          onclick="clickFun(this)"
-          data-active-page="resume"
-          style="color: #00d612"
-        >
-          Resume
-        </li>
-        <li
-          onclick="clickFun(this)"
-          data-active-page="about"
-          style="color: #00d612"
-        >
-          About
-        </li>
-      </ul>
+    <div class="container">
+      <div class="nav">
+        <ul>
+          <li onclick="clickFun(this)" data-active-page="home">Home</li>
+          <li onclick="clickFun(this)" data-active-page="project">Project</li>
+          <li onclick="clickFun(this)" data-active-page="resume">Resume</li>
+          <li onclick="clickFun(this)" data-active-page="about">About</li>
+        </ul>
+      </div>
     </div>
 
     <section id="home" class="pages active">
-      <div class="container">
+      <div class="container2">
         <div class="homeInfo">
-          <h3>Hello my name is</h3>
+          <h3>Hello,my name is</h3>
           <h1>Rahul Ranjan</h1>
-          <h2 id="textChange">
-            I'm <span class="typing" style="color: #fffb02"></span>
-          </h2>
-        </div>
-        <div class="imgInfo">
-          <img src="image/rahul.jpg" alt="rahul's pic" />
+          <div>
+            <h2 id="textChange">
+              And i'm <span class="typing" style="color: #dfee0d"></span>
+            </h2>
+          </div>
         </div>
       </div>
     </section>

@@ -6,11 +6,11 @@ function clickFun(element) {
   console.log(element.dataset.active);
   const sect = document
     .getElementById(element.dataset.activePage)
-    .classList.add("active")
+    .classList.add("active");
 }
 
 var typed = new Typed(".typing", {
-  strings: ["Rahul", " a friend.", "a programmer.", "a Gamer."],
+  strings: ["Rahul", " a friend.", "a programmer.", "a Gamer.", "a student."],
   loop: true,
   typeSpeed: 50,
   backSpeed: 50,

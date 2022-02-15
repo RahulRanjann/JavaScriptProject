@@ -1,32 +1,56 @@
 @import url("https://fonts.googleapis.com/css2?family=Mukta:wght@300;400;500;600;700;800&display=swap");
+:root {
+  --color-blueAndGrayShad: #19282f;
+  --color-text-white: rgb(255, 255, 255);
+}
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 body {
-  background-image: url(image/hans-isaacson-iEKg9h5_hd4-unsplash.jpg);
+  background-image: url(image/5c489908a9bd6c0022d5e17f.webp);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
   background-position: center center;
-  background-color: #464646;
-  font-family: 'Mukta', sans-serif;
+
+  font-family: "Mukta", sans-serif;
 }
-h1,
 h3 {
-  color: white;
+  color: var(--color-text-white);
   padding: 0px;
+  font-size: 30px;
+  align-items: center;
+  text-overflow: inline;
+}
+h1 {
+  color: #0c47b4;
+  font-size: 80px;
   align-items: center;
 }
-h2{
-  color: white;
+h2 {
+  color: var(--color-text-white);
   margin: auto;
   align-items: center;
 }
+.container {
+  display: flex;
+  float: right;
+}
+.container .nav ul li {
+  color: rgb(255, 255, 255);
+  transition: 0.2s ease;
+}
+.container .nav ul li:hover {
+  color: #d3eca7;
+  border-bottom: 2px solid #d3eca7;
+}
+
 .nav ul {
   list-style: none;
   display: flex;
+  margin-right: 25px;
 }
 .nav ul li {
   margin: 10px;
@@ -36,18 +60,40 @@ h2{
 }
 .pages {
   display: none;
-  padding: 50px 30px;
+  padding: 50px 100px;
 }
 .pages.active {
   display: block;
 }
-.container {
+.container2 {
   display: flex;
+  align-items: center;
   justify-content: space-between;
+  height: 85vh;
 }
 .imgInfo img {
-  width: 25em;
+  width: 22em;
+  border-radius: 5px;
+  float:right;
 }
-.homeInfo{
-  text-align: end;
+.homeInfo {
+  margin-left: 15px;
+  width: 50%;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo {
+  font-family: "Mukta", sans-serif;
+  margin-left: 15px;
+  font-size: 50px;
+  color: #fff;
+}
+.logo .lio {
+  font-family: "Mukta", sans-serif;
+  font-size: 50px;
+  color: rgb(255, 5, 5);
 }
