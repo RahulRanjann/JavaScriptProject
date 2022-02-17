@@ -10,7 +10,14 @@ function clickFun(element) {
 }
 
 var typed = new Typed(".typing", {
-  strings: ["Rahul", " a friend.", "a programmer.", "a Gamer.", "a student."],
+  strings: [
+    "Rahul",
+    " a Friend.",
+    "a Programmer.",
+    "a Gamer.",
+    "a Student.",
+    "Developer.",
+  ],
   loop: true,
   typeSpeed: 50,
   backSpeed: 50,

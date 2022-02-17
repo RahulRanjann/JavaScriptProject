@@ -14,56 +14,74 @@ body {
   background-attachment: fixed;
   background-size: cover;
   background-position: center center;
-
   font-family: "Mukta", sans-serif;
+  overflow: hidden;
 }
 h3 {
   color: var(--color-text-white);
   padding: 0px;
   font-size: 30px;
   align-items: center;
-  text-overflow: inline;
 }
-h1 {
-  color: #0c47b4;
-  font-size: 80px;
+.homeInfo p {
+  color: #00aeff;
+  font-size: 90px;
+  font-weight: bold;
   align-items: center;
 }
 h2 {
   color: var(--color-text-white);
   margin: auto;
   align-items: center;
+  /* margin-left: 80px; */
 }
 .container {
   display: flex;
   float: right;
 }
-.container .nav ul li {
+.portfolio-logo {
+  float: left;
+  justify-content: space-between;
+}
+.container .navli {
   color: rgb(255, 255, 255);
   transition: 0.2s ease;
 }
-.container .nav ul li:hover {
-  color: #d3eca7;
-  border-bottom: 2px solid #d3eca7;
+.nav-item a:hover {
+  color: #d3eca7 !important;
+  border-bottom: 2px solid #d3eca7 !important;
+  cursor: pointer !important;
 }
 
 .nav ul {
   list-style: none;
   display: flex;
+  padding-top: 15px;
   margin-right: 25px;
 }
-.nav ul li {
+.nav li {
   margin: 10px;
   font-size: 25px;
   font-weight: 700;
-  cursor: pointer;
 }
 .pages {
   display: none;
   padding: 50px 100px;
+  color: var(--color-text-white);
 }
 .pages.active {
   display: block;
+}
+
+.container-fluid .navbar-brand #portfo {
+  color: #ffffff !important;
+  font-size: 30px !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  margin-bottom: 0% !important;
+}
+.container-fluid .navbar-brand #lio {
+  color: crimson !important;
 }
 .container2 {
   display: flex;
@@ -74,11 +92,10 @@ h2 {
 .imgInfo img {
   width: 22em;
   border-radius: 5px;
-  float:right;
+  float: right;
 }
 .homeInfo {
   margin-left: 15px;
-  width: 50%;
 }
 
 .container {
@@ -96,4 +113,30 @@ h2 {
   font-family: "Mukta", sans-serif;
   font-size: 50px;
   color: rgb(255, 5, 5);
+}
+.ico #icon:hover {
+  color: crimson !important;
+}
+.ico {
+  display: flex;
+  width: 20rem;
+}
+
+.ico #icon {
+  color: #fff;
+  justify-content: center;
+  align-items: center;
+  margin-right: auto;
+}
+
+@media (max-width: 600px) {
+  .homeInfo p {
+    font-size: 40px;
+  }
+  .pages {
+    padding: 0px 50px;
+  }
+  .ico {
+    width: 15rem;
+  }
 }
