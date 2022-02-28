@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Facebook – log in or sign up</title>
     <link rel="stylesheet" href="./Style.css" />
+    <script src="Script.js" type="module" defer></script>
   </head>
 
   <body>
@@ -23,19 +24,25 @@
             <h3 id="para">Log in to Facebook</h3>
             <input
               type="text"
-              id="email"
+              id="email_field"
               class="inputClass"
               placeholder="Email address or phone number"
             />
             <input
               type="text"
-              id="password"
+              id="password_field"
               class="inputClass"
               placeholder="Password"
             />
-            <div id="loginBtn" class="btnBox">
+
+            <button
+              type="button"
+              id="loginBtn"
+              class="btnBox"
+            
+            >
               <span>Log In</span>
-            </div>
+            </button>
             <a href="google.com" id="forgotPassword">Forgotten password?</a>
             <hr />
             <div id="create">Create New Account</div>
@@ -44,5 +51,25 @@
         <p><a href="#">Create a page</a> for a celebrity, brand or business.</p>
       </div>
     </div>
+
+    <div id="AfterLogin">
+      <p>Hello</p>
+    </div>
+
+    <!-- firebase script from here -->
+
+    <script type="module">
+      // Import the functions you need from the SDKs you need
+     
+      // TODO: Add SDKs for Firebase products that you want to use
+      // https://firebase.google.com/docs/web/setup#available-libraries
+
+      // Your web app's Firebase configuration
+      // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+      
+
+      // Initialize Firebase
+    
+    </script>
   </body>
 </html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign In/Up</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <!-- login beginnes here-->
+    <div id="login_div">
+      <i class="fa-solid fa-user fa-5x"></i>
+      <br />
+      <p id="text_Login">Login</p>
+      <input
+        type="text"
+        id="login_email"
+        class="emailBox"
+        placeholder="Enter your email"
+      />
+      <input
+        type="text"
+        id="login_password"
+        class="passwordBox"
+        placeholder="Enter your password"
+      />
+      <input type="button" id="login" class="login_Btn" value="Login" />
+      <button id="register" class="register_link" onclick="jumpPage()">
+        Don't have an account? REGISTER
+      </button>
+    </div>
+
+    <!-- Registration beginnes here -->
+    <div id="registration_div">
+       <i class="fa-solid fa-user fa-5x"></i>
+      <br />
+      <p id="text_Register">Register</p>
+      <input
+        type="text"
+        id="register_email"
+        class="emailBox"
+        placeholder="Enter your email"
+      />
+      <input
+        type="text"
+        id="register_password"
+        class="passwordBox"
+        placeholder="Enter your password"
+      />
+      <input
+        type="button"
+        id="register"
+        class="register_Btn"
+        value="Register"
+      />
+      <button id="login" class="login_link" onclick="jumpPage()">
+        Already have an account? Login
+      </button>
+    </div>
+
+    <div id="result_box">
+      <h3 id="result"></h3>
+    </div>
+  </body>
+</html>

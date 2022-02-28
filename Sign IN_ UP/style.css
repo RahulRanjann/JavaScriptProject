@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Pacifico&family=Redressed&family=Ubuntu+Mono&display=swap");
+
+body {
+  display: flex;
+  justify-content: center;
+
+  background-color: #1a2d4b;
+}
+#login_div {
+  justify-content: center;
+  align-items: center;
+  height: 450px;
+  width: 400px;
+  margin-top: 30px;
+  background: #384a66;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+  border: 1px solid rgba(165, 154, 154, 0.18);
+}
+.fa-user {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  margin-bottom: 5px;
+  color: #141433;
+}
+#text_Login {
+  display: flex;
+  font-size: larger;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  color: aliceblue;
+  font-family: Pacifico;
+  margin-bottom: 10px;
+  margin-top: 5px;
+}
+
+.emailBox,
+.passwordBox {
+  display: flex;
+  padding-left: 15px;
+  justify-content: center;
+  font-size: large;
+  align-items: center;
+  height: 45px;
+  width: 350px;
+  margin: auto;
+  border-radius: 20px;
+  margin-bottom: 15px;
+  font-family: Ubuntu;
+}
+
+.login_Btn {
+  display: flex;
+  padding-left: 15px;
+  justify-content: center;
+  align-items: center;
+  height: 45px;
+  width: 180px;
+  margin: auto;
+  border-radius: 20px;
+  margin-top: 15px;
+  font-family: Ubuntu;
+  font-size: larger;
+  font-weight: 100;
+  background-color: none;
+}
+.register_link {
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  background-color: Transparent;
+  background-repeat: no-repeat;
+  border: none;
+  margin-top: 10px;
+  border: 0;
+  width: auto;
+  cursor: pointer;
+}
+
+#registration_div {
+  justify-content: center;
+  align-items: center;
+  height: 450px;
+  width: 400px;
+  margin-top: 30px;
+  background: #384a66;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+  border: 1px solid rgba(165, 154, 154, 0.18);
+  display: none;
+}
+
+#text_Register {
+  display: flex;
+  font-size: larger;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  color: aliceblue;
+  font-family: Pacifico;
+  margin-bottom: 10px;
+  margin-top: 5px;
+}
+.register_Btn {
+  display: flex;
+  padding-left: 15px;
+  justify-content: center;
+  align-items: center;
+  height: 45px;
+  width: 180px;
+  margin: auto;
+  border-radius: 20px;
+  margin-top: 15px;
+  font-family: Ubuntu;
+  font-size: larger;
+  font-weight: 100;
+}
+.login_link {
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  background-color: Transparent;
+  background-repeat: no-repeat;
+  border: none;
+  margin-top: 10px;
+  border: 0;
+  width: auto;
+  cursor: pointer;
+}
