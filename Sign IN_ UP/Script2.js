@@ -22,51 +22,56 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 const auth = getAuth(app);
 
+// *********************toast Objects***************************/
+const toast_container = document.querySelector("body > div.toast_container");
+const toast = document.querySelector("#toast_text");
+
 // taking ides from html(Register)
 const reg_email = document.getElementById("register_email");
 const reg_pass = document.getElementById("register_password");
 const singUp = document.getElementById("signUp");
-const toastReg =
-  //**************signup*******************/
-  singUp.addEventListener("click", (event) => {
-    event.preventDefault();
-    createUserWithEmailAndPassword(auth, reg_email.value, reg_pass.value)
-      .then((userCredential) => {
-        console.log(userCredential);
-        toast_container.style.visibility = "visible";
-        setTimeout(() => {
-          toast_container.style.visibility = "hidden";
-        }, 3000);
-      })
-      .catch((error) => {
-        const errorCode = error.code;
-        const errorMessage = error.message;
-        console.log(errorCode);
 
-        toast_container.style.visibility = "visible";
-        toast.style.background =
-          "linear-gradient(to bottom, #fa3232 0%, #e66056e8 100%)";
-        setTimeout(() => {
-          toast_container.style.visibility = "hidden";
-        }, 3000);
+//**************signup*******************/
+singUp.addEventListener("click", (event) => {
+  event.preventDefault();
+  createUserWithEmailAndPassword(auth, reg_email.value, reg_pass.value)
+    .then((userCredential) => {
+      console.log(userCredential);
+      toast.innerHTML = "Register Successfully";
+      toast_container.style.visibility = "visible";
+      setTimeout(() => {
+        toast_container.style.visibility = "hidden";
+      }, 3000);
+    })
+    .catch((error) => {
+      const errorCode = error.code;
+      const errorMessage = error.message;
+      console.log(errorCode);
 
-        if (errorCode == "auth/invalid-email") {
-          toast.innerHTML = "Enter your EMAIL and PASSWORD!";
-        } else if (errorCode == "auth/internal-error") {
-          toast.innerHTML = "Enter your PASSWORD!";
-        } else if (errorCode == "auth/network-request-failed") {
-          toast.innerHTML = "Please check your INTERNET Connection!";
-        }
-      });
-  });
+      toast_container.style.visibility = "visible";
+      toast.style.background =
+        "linear-gradient(to bottom, #fa3232 0%, #e66056e8 100%)";
+      setTimeout(() => {
+        toast_container.style.visibility = "hidden";
+      }, 3000);
+
+      if (errorCode == "auth/invalid-email") {
+        toast.innerHTML = "Enter your EMAIL and PASSWORD!";
+      } else if (errorCode == "auth/internal-error") {
+        toast.innerHTML = "Enter your PASSWORD!";
+      } else if (errorCode == "auth/network-request-failed") {
+        toast.innerHTML = "Please check your INTERNET Connection!";
+      } else if (errorCode == "auth/email-already-in-use") {
+        toast.innerHTML = "you are Already REGISTERED!";
+      }
+    });
+});
 //******************************************* */
 
 // taking ides from html(login)
 const login_emial = document.getElementById("login_email");
 const login_pass = document.getElementById("login_password");
 const login = document.getElementById("login_btn");
-const toast_container = document.querySelector("body > div.toast_container");
-const toast = document.querySelector("#toast_text");
 
 //*********************signIn********************* */
 login.addEventListener("click", (event) => {
