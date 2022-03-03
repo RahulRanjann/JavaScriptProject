@@ -1,10 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Anton&family=Pacifico&family=Redressed&family=Ubuntu+Mono&display=swap");
-
+@import url("https://fonts.googleapis.com/css?family=Raleway:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i");
 body {
-  display: flex;
-  justify-content: center;
-
   background-color: #1a2d4b;
+}
+.authantication {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 #login_div {
   justify-content: center;
@@ -18,6 +20,7 @@ body {
   -webkit-backdrop-filter: blur(4px);
   border-radius: 10px;
   border: 1px solid rgba(165, 154, 154, 0.18);
+  display: none;
 }
 .fa-user {
   display: flex;
@@ -98,7 +101,6 @@ body {
   -webkit-backdrop-filter: blur(4px);
   border-radius: 10px;
   border: 1px solid rgba(165, 154, 154, 0.18);
-  display: none;
 }
 
 #text_Register {
@@ -112,7 +114,7 @@ body {
   margin-bottom: 10px;
   margin-top: 5px;
 }
-.register_Btn {
+.signUp_Btn {
   display: flex;
   padding-left: 15px;
   justify-content: center;
@@ -138,4 +140,23 @@ body {
   border: 0;
   width: auto;
   cursor: pointer;
+}
+
+.toast_container {
+  float: right;
+}
+
+.toast {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  background: linear-gradient(to bottom, #46fb73 0%, #ace656 100%);
+  height: 40px;
+  width: 20rem;
+  float: right;
+  padding: 5px;
+  border-radius: 10px;
+}
+.toast_container {
+  visibility: hidden;
 }
