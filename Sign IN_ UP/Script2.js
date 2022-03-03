@@ -37,6 +37,9 @@ singUp.addEventListener("click", (event) => {
   createUserWithEmailAndPassword(auth, reg_email.value, reg_pass.value)
     .then((userCredential) => {
       console.log(userCredential);
+
+      toast.style.background =
+        "linear-gradient(to bottom, #46fb73 0%, #ace656 100%)";
       toast.innerHTML = "Register Successfully";
       toast_container.style.visibility = "visible";
       setTimeout(() => {
@@ -84,6 +87,7 @@ login.addEventListener("click", (event) => {
       console.log("bingo");
       toast_container.style.visibility = "visible";
       setTimeout(() => {
+        toast.innerHTML = "login sucessfully";
         toast_container.style.visibility = "hidden";
       }, 3000);
 
