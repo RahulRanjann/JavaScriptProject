@@ -85,9 +85,11 @@ login.addEventListener("click", (event) => {
       const user = userCredential.user;
       console.log(userCredential);
       console.log("bingo");
+      toast.innerHTML = "login sucessfully";
+      toast.style.background =
+        "linear-gradient(to bottom, #46fb73 0%, #ace656 100%)";
       toast_container.style.visibility = "visible";
       setTimeout(() => {
-        toast.innerHTML = "login sucessfully";
         toast_container.style.visibility = "hidden";
       }, 3000);
 
@@ -110,8 +112,11 @@ login.addEventListener("click", (event) => {
       } else if (errorCode == "auth/wrong-password") {
         toast.innerHTML = "Wrong PASSWORD!";
       } else if (errorCode == "auth/internal-error") {
-        toast.innerHTML = "fill all the REQUIRED FIELD! ";
-      } else {
+        toast.innerHTML = "fill all the REQUIRED Fields! ";
+      } else if(errorCode == "auth/network-request-failed"){
+        toast.innerHTML = "Plese check your INTERNET connection!";
+      }
+      else {
         toast.innerHTML = "something went WRONG!";
       }
       console.log(errorCode);
