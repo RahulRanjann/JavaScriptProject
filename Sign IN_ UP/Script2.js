@@ -45,6 +45,7 @@ singUp.addEventListener("click", (event) => {
       setTimeout(() => {
         toast_container.style.visibility = "hidden";
       }, 3000);
+      window.location.href ="index2.html";
     })
     .catch((error) => {
       const errorCode = error.code;
@@ -85,6 +86,7 @@ login.addEventListener("click", (event) => {
       const user = userCredential.user;
       console.log(userCredential);
       console.log("bingo");
+      window.location.href ="index2.html";
       toast.innerHTML = "login sucessfully";
       toast.style.background =
         "linear-gradient(to bottom, #46fb73 0%, #ace656 100%)";
