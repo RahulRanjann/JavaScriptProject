@@ -45,7 +45,7 @@ singUp.addEventListener("click", (event) => {
       setTimeout(() => {
         toast_container.style.visibility = "hidden";
       }, 3000);
-      window.location.href ="index2.html";
+      window.location.href = "index2.html";
     })
     .catch((error) => {
       const errorCode = error.code;
@@ -76,7 +76,7 @@ singUp.addEventListener("click", (event) => {
 const login_emial = document.getElementById("login_email");
 const login_pass = document.getElementById("login_password");
 const login = document.getElementById("login_btn");
-
+const loder = document.getElementById("preloader");
 //*********************signIn********************* */
 login.addEventListener("click", (event) => {
   signInWithEmailAndPassword(auth, login_emial.value, login_pass.value)
@@ -86,11 +86,12 @@ login.addEventListener("click", (event) => {
       const user = userCredential.user;
       console.log(userCredential);
       console.log("bingo");
-      window.location.href ="index2.html";
+      window.location.href = "index2.html";
       toast.innerHTML = "login sucessfully";
       toast.style.background =
         "linear-gradient(to bottom, #46fb73 0%, #ace656 100%)";
       toast_container.style.visibility = "visible";
+
       setTimeout(() => {
         toast_container.style.visibility = "hidden";
       }, 3000);
@@ -115,10 +116,9 @@ login.addEventListener("click", (event) => {
         toast.innerHTML = "Wrong PASSWORD!";
       } else if (errorCode == "auth/internal-error") {
         toast.innerHTML = "fill all the REQUIRED Fields! ";
-      } else if(errorCode == "auth/network-request-failed"){
+      } else if (errorCode == "auth/network-request-failed") {
         toast.innerHTML = "Plese check your INTERNET connection!";
-      }
-      else {
+      } else {
         toast.innerHTML = "something went WRONG!";
       }
       console.log(errorCode);
@@ -137,12 +137,12 @@ var bool = true;
 
 function toggle() {
   if (bool) {
-    loginDiv.style.display = "block";
-    regDiv.style.display = "none";
-    bool = false;
-  } else {
     loginDiv.style.display = "none";
     regDiv.style.display = "block";
+    bool = false;
+  } else {
+    loginDiv.style.display = "block";
+    regDiv.style.display = "none";
     bool = true;
   }
 }
