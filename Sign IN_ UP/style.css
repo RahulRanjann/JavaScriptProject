@@ -1,5 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Anton&family=Pacifico&family=Redressed&family=Ubuntu+Mono&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Raleway:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i");
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
 body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -309,6 +316,46 @@ body {
 .toast_container {
   visibility: hidden;
 }
+/* ********************index2 start form here******************** */
+
+nav {
+  background-color: #0082e6;
+  height: 88px;
+  width: 100%;
+}
+
+label.logo {
+  color: #fff;
+  font-size: 35px;
+  line-height: 80px;
+  padding: 0 100px;
+  font-weight: bold;
+}
+
+nav ul {
+  float: right;
+  margin-right: 20px;
+}
+
+nav ul li {
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 50px;
+}
+
+nav ul li a{
+  color: white;
+  font-size: 17px;
+  text-transform: uppercase;
+  padding: 7px 13px;
+  border-radius:3px ;
+
+}
+a.active,a:hover{
+  background: #1b9bff;
+  transition: .05s;
+}
+
 @media (max-width: 600px) {
   .authantication {
     justify-content: center;
