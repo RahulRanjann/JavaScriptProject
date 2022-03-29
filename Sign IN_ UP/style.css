@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Anton&family=Pacifico&family=Redressed&family=Ubuntu+Mono&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Raleway:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i");
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Nunito:ital,wght@0,900;1,600&family=Pacifico&family=Redressed&family=Ubuntu+Mono&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -9,6 +10,7 @@
 }
 body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  height: 98vh;
 }
 h1 {
   margin: 0;
@@ -317,51 +319,79 @@ body {
   visibility: hidden;
 }
 /* ********************index2 start form here******************** */
-
-nav {
-  background-color: #0082e6;
-  height: 88px;
-  width: 100%;
+.bg-light .container-fluid .navbar-brand {
+  font-size: xx-large !important;
+  font-family: nunito !important;
 }
-
-label.logo {
-  color: #fff;
-  font-size: 35px;
-  line-height: 80px;
-  padding: 0 100px;
-  font-weight: bold;
+.bg-light .container-fluid a {
+  font-weight: 500 !important;
+  color: white !important;
 }
-
-nav ul {
-  float: right;
-  margin-right: 20px;
+.bg-light {
+  --bs-bg-opacity: 1;
 }
-
-nav ul li {
-  display: inline-block;
-  line-height: 80px;
-  margin: 0 50px;
+nav.bg-light {
+  background-color: rgba(255, 255, 255, 0) !important;
 }
-
-nav ul li a{
+.navbar-nav .nav-item {
+  float: right !important;
+}
+.back-video {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -2;
+  filter: brightness(65%);
+}
+#logout-button {
+  background-color: rgb(0, 0, 0);
+  border: none;
+  font-size: 15px;
+  padding: 10px;
+  border-radius: 5px;
   color: white;
-  font-size: 17px;
-  text-transform: uppercase;
-  padding: 7px 13px;
-  border-radius:3px ;
-
+  cursor: pointer;
+  margin-left: 5px;
 }
-a.active,a:hover{
-  background: #1b9bff;
-  transition: .05s;
+.logout {
+  display: none;
+  font-size: 15px;
+  position: relative;
+  overflow: hidden;
+  opacity: 0;
+  transition: opacity 0.45s;
+  margin-left: 10px;
 }
-
-@media (max-width: 600px) {
-  .authantication {
-    justify-content: center;
-    align-items: center;
-    margin-top: 30px;
-    margin-left: 10px;
-    margin-right: 10px;
-  }
+.button {
+  padding: 0px;
+  color: white;
+  width: 15px;
+  transition: width 0.35s;
+  overflow: hidden;
+  display: flex;
+}
+#logout-button:hover .logout {
+  display: block;
+  opacity: 1;
+}
+#logout-button:hover .button {
+  width: 75px;
+}
+.nav-item:hover.nav-link {
+  border: 1px solid black !important;
+  border-radius: 5px !important;
+}
+#and {
+  text-shadow: 1px 1px 1px #ffffff !important;
+  color: yellow !important;
+}
+#tour {
+  text-shadow: 1px 1px 1px #ffffff !important;
+  color: red !important;
+}
+#travel {
+  text-shadow: 1px 1px 1px #ffffff !important;
+  color: rgb(77, 157, 248) !important;
 }
