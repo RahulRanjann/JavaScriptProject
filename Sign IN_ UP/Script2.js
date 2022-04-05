@@ -149,3 +149,14 @@ function toggle() {
 
 reg_btn.addEventListener("click", toggle);
 log_btn.addEventListener("click", toggle);
+
+function clickFun(element) {
+  const pages = document.querySelectorAll(".pages");
+  pages.forEach(function (page) {
+    page.classList.remove("active");
+  });
+  console.log(element.dataset.active);
+  const sect = document
+    .getElementById(element.dataset.activePage)
+    .classList.add("active");
+}
