@@ -608,7 +608,7 @@ nav.bg-light {
 }
 
 .footer .box-container .box a:hover{
-  color:var(--orange);
+  color: orange;
   text-decoration: underline;
 }
 
@@ -623,5 +623,5 @@ nav.bg-light {
 }
 
 .footer .credit span{
-  color:var(--orange);
+  color:orange;
 }
