@@ -1,14 +1,19 @@
 // Import the functions you need from the SDKs you need
-import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.7/firebase-app.js";
+import { initializeApp } from "https://www.gstatic.com/firebasejs/9.0.0/firebase-app.js";
 import {
   getAuth,
   onAuthStateChanged,
   signOut,
-} from "https://www.gstatic.com/firebasejs/9.6.7/firebase-auth.js";
+} from "https://www.gstatic.com/firebasejs/9.0.0/firebase-auth.js";
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
+import {
+  getFirestore,
+  doc,
+  setDoc,
+  getDoc,
+} from "https://www.gstatic.com/firebasejs/9.0.0/firebase-firestore.js";
 
-// Your web app's Firebase configuration
 const firebaseConfig = {
   apiKey: "AIzaSyCh_LKbmd4OD650PN9OkO5Fkql4EiIuzY4",
   authDomain: "signup-and-signin-d25c2.firebaseapp.com",
@@ -35,3 +40,34 @@ onAuthStateChanged(auth, (user) => {
 logoutBtn.onclick = function () {
   signOut(auth);
 };
+
+const firestore = getFirestore();
+
+const howMany = document.querySelector("#howMany");
+const whereTo = document.querySelector("#whereTo");
+const arrivals = document.querySelector("#arrivals");
+const leaving = document.querySelector("#leaving");
+const submit = document.querySelector("#done-btn");
+
+onAuthStateChanged(auth, (user) => {
+  if (user) {
+    submit.onclick = (e) => {
+      e.preventDefault();
+      const data = {
+        howMany: howMany.value,
+        whereTo: whereTo.value,
+        arrivals: arrivals.value,
+        leaving: leaving.value,
+      };
+      const db = doc(firestore, "users/" + user.email + new Date().getTime());
+      setDoc(db, data).then(() => {
+        alert("your request booked");
+      });
+    };
+  }
+});
+
+//
+setTimeout(() => {
+  document.querySelector("#home > div.controls > span.vid-btn.active").click();
+}, 2000);

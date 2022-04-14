@@ -18,6 +18,9 @@
 
     <!-- custom css file link  -->
     <link rel="stylesheet" href="Cssstyle.css" />
+
+    <!-- custom js file link  -->
+    <script src="javaScript.js" defer></script>
   </head>
   <body>
     <!-- header section starts  -->
@@ -116,21 +119,21 @@
         <form action="">
           <div class="inputBox">
             <h3>where to</h3>
-            <input type="text" placeholder="place name" />
+            <input type="text" placeholder="place name" id="whereTo" />
           </div>
           <div class="inputBox">
             <h3>how many</h3>
-            <input type="number" placeholder="number of guests" />
+            <input type="number" placeholder="number of guests" id="howMany" />
           </div>
           <div class="inputBox">
             <h3>arrivals</h3>
-            <input type="date" />
+            <input type="date" id="arrivals" />
           </div>
           <div class="inputBox">
             <h3>leaving</h3>
-            <input type="date" />
+            <input type="date" id="leaving" />
           </div>
-          <input type="submit" class="btn" value="book now" />
+          <input type="submit" class="btn" value="book now" id="done-btn" />
         </form>
       </div>
     </section>
@@ -640,13 +643,13 @@
         </div>
         <div class="box">
           <h3>quick links</h3>
-          <a href="#">home</a>
-          <a href="#">book</a>
-          <a href="#">packages</a>
-          <a href="#">services</a>
-          <a href="#">gallery</a>
-          <a href="#">review</a>
-          <a href="#">contact</a>
+          <a href="#home">home</a>
+          <a href="#book">book</a>
+          <a href="#packages">packages</a>
+          <a href="#services">services</a>
+          <a href="#gallery">gallery</a>
+          <a href="#review">review</a>
+          <a href="#contact">contact</a>
         </div>
         <div class="box">
           <h3>follow us</h3>
@@ -654,7 +657,9 @@
           <a href="#"><i class="fab fa-instagram"></i></a>
           <a href="#"><i class="fab fa-whatsapp"></i></a>
           <a href="#"><i class="fab fa-linkedin-in"></i></a>
-          <a href="https://rahulranjann.github.io/">portfolio</a>
+          <a href="https://rahulranjann.github.io/"
+            ><i class="far fa-file-alt"></i
+          ></a>
         </div>
       </div>
 
@@ -662,10 +667,8 @@
         created by <span> Rahul Ranjan </span> | all rights reserved!
       </h1>
     </section>
+    <script type="module" src="script.js"></script>
 
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-
-    <!-- custom js file link  -->
-    <script src="javaScript.js"></script>
   </body>
 </html>
