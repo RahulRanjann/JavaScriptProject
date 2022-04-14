@@ -409,31 +409,7 @@ nav.bg-light {
   color: yellow !important;
 }
 
-.container .navli {
-  color: rgb(155, 0, 0);
-  transition: 0.2s ease;
-}
-.nav-item a{
-  color: #343434 !important;
-  font-weight: bolder;
-}
-.nav-item a:hover {
-  color: #f0de21 !important;
-  border-bottom: 2px solid #ff3636 !important;
-  cursor: pointer !important;
-}
 
-.nav ul {
-  list-style: none;
-  display: flex;
-  padding-top: 15px;
-  margin-right: 25px;
-}
-.nav li {
-  margin: 10px;
-  font-size: 25px;
-  font-weight: 700;
-}
 .pages {
   display: none;
   /* padding: 50px 100px; */
