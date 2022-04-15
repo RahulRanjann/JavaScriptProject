@@ -61,13 +61,10 @@ onAuthStateChanged(auth, (user) => {
       };
       const db = doc(firestore, "users/" + user.email + new Date().getTime());
       setDoc(db, data).then(() => {
-        alert("your request booked");
+        alert("travel booked successfully👏👏");
       });
     };
   }
 });
 
 //
-setTimeout(() => {
-  document.querySelector("#home > div.controls > span.vid-btn.active").click();
-}, 2000);
