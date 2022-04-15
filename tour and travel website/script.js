@@ -48,10 +48,10 @@ const whereTo = document.querySelector("#whereTo");
 const arrivals = document.querySelector("#arrivals");
 const leaving = document.querySelector("#leaving");
 const submit = document.querySelector("#done-btn");
-
+const formData = document.querySelector("#formData");
 onAuthStateChanged(auth, (user) => {
   if (user) {
-    submit.onclick = (e) => {
+    formData.onsubmit = (e) => {
       e.preventDefault();
       const data = {
         howMany: howMany.value,
@@ -62,6 +62,7 @@ onAuthStateChanged(auth, (user) => {
       const db = doc(firestore, "users/" + user.email + new Date().getTime());
       setDoc(db, data).then(() => {
         alert("travel booked successfully👏👏");
+        formData.reset();
       });
     };
   }
