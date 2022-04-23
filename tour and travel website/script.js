@@ -30,8 +30,8 @@ const auth = getAuth(app);
 const logoutBtn = document.querySelector("#logout-button");
 onAuthStateChanged(auth, (user) => {
   if (user) {
-    document.querySelector("#preloader").style.visibility = "hidden";
-    console.log("Logged in");
+    // document.querySelector("#preloader").style.visibility = "hidden";
+    // console.log("Logged in");
   } else {
     window.location.href = "index.html";
   }

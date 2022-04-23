@@ -529,8 +529,9 @@ header .navbar a:hover{
   padding:1rem;
   font-size: 1.7rem;
   color:#333;
-  background:#f7f7f7;
+  background: #fbb94f;
   text-transform: none;
+  
 }
 
 .contact .row form textarea{

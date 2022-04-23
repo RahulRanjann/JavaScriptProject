@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>travel with me.</title>
+    <title>🌍Tour&Travel</title>
 
     <link
       rel="stylesheet"
@@ -48,24 +48,7 @@
       </nav>
     </header>
 
-    <!-- header section ends -->
-
-    <!-- login form container 
-
-    <div class="login-form-container">
-      <i class="fas fa-times" id="form-close"></i>
-
-      <form action="">
-        <h3>login</h3>
-        <input type="email" class="box" placeholder="enter your email" />
-        <input type="password" class="box" placeholder="enter your password" />
-        <input type="submit" value="login now" class="btn" />
-        <input type="checkbox" id="remember" />
-        <label for="remember">remember me</label>
-        <p>forget password? <a href="#">click here</a></p>
-        <p>don't have and account? <a href="#">register now</a></p>
-      </form>
-    </div> -->
+    
 
     <!-- home section starts  -->
 
@@ -73,7 +56,7 @@
       <div class="content">
         <h3>adventure is worthwhile</h3>
         <p>dicover new places with us, adventure awaits</p>
-        <a href="#" class="btn">discover more</a>
+        <a href="#book" class="btn">discover more with US</a>
       </div>
 
       <div class="controls">
@@ -590,23 +573,23 @@
           <img src="images/contact-img.svg" alt="" />
         </div>
 
-        <form action="">
+        <form method="post">
           <div class="inputBox">
-            <input type="text" placeholder="name" />
-            <input type="email" placeholder="email" />
+            <input type="text" id="name" placeholder="name" required />
+            <input type="email" id="email" placeholder="email" required />
           </div>
           <div class="inputBox">
-            <input type="number" placeholder="number" />
-            <input type="text" placeholder="subject" />
+            <input type="number" id="number" placeholder="number" required />
+            <input type="text" id="subject" placeholder="subject" required />
           </div>
           <textarea
             placeholder="message"
-            name=""
-            id=""
+            id="message"
             cols="30"
             rows="10"
+            required
           ></textarea>
-          <input type="submit" class="btn" value="send message" />
+          <input type="submit" class="btn" id="submit" value="send message" />
         </form>
       </div>
     </section>
@@ -658,10 +641,19 @@
         </div>
         <div class="box">
           <h3>follow us</h3>
-          <a href="#"><i class="fab fa-facebook-f"></i></a>
-          <a href="#"><i class="fab fa-instagram"></i></a>
-          <a href="#"><i class="fab fa-whatsapp"></i></a>
-          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://www.facebook.com/stalin.ranjan.16/"
+            ><i class="fab fa-facebook-f"></i
+          ></a>
+          <a href="https://www.instagram.com/rahulranjan257/"
+            ><i class="fab fa-instagram"></i
+          ></a>
+          <a
+            href="https://api.whatsapp.com/send/?phone=%2B918540076476&text=hello+Rahul+Ranjan&app_absent=0"
+            ><i class="fab fa-whatsapp"></i
+          ></a>
+          <a href="https://www.linkedin.com/in/rahul-ranjan-378318232/"
+            ><i class="fab fa-linkedin-in"></i
+          ></a>
           <a href="https://rahulranjann.github.io/"
             ><i class="far fa-file-alt"></i
           ></a>
@@ -689,5 +681,40 @@
     <script type="module" src="script.js"></script>
 
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+      var submitBtn = document.getElementById("submit");
+      submitBtn.addEventListener("click", function (e) {
+        e.preventDefault();
+        console.log("heyy");
+      });
+      var name = document.getElementById("name").value;
+      var email = document.getElementById("email").value;
+      var number = document.getElementById("number").value;
+      var subject = document.getElementById("subject").value;
+      var message = document.getElementById("message").value;
+      var body =
+        "name: " +
+        name +
+        "<br/> email:" +
+        email +
+        "<br/> number: " +
+        number +
+        "<br/> subject: " +
+        subject +
+        "<br/> message: " +
+        message;
+
+      Email.send({
+        Host: "smtp.gmail.com",
+        Username: "rahul1913111054@gmail.com",
+        Password: "dakllqgeybzqfigs",
+        To: "rahul1913111054@gmail.com",
+        From: email,
+        Subject: subject,
+        Body: body,
+      }).then((message) => alert(message));
+    </script>
   </body>
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
 </html>
