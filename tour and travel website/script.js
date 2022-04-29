@@ -45,8 +45,8 @@ const firestore = getFirestore();
 
 const howMany = document.querySelector("#howMany");
 const whereTo = document.querySelector("#whereTo");
-const arrivals = document.querySelector("#arrivals");
-const leaving = document.querySelector("#leaving");
+const arrivals = document.querySelector("#CheckIn");
+const leaving = document.querySelector("#checkOut");
 const submit = document.querySelector("#done-btn");
 const formData = document.querySelector("#formData");
 onAuthStateChanged(auth, (user) => {
